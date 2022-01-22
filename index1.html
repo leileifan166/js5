@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Star(uname,age,sex){
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(sang){
+                console.log(sang);
+            }
+
+        }
+
+        var ldh = new Star('刘德华',18,'男');
+        console.log(ldh.name);
+        console.log(ldh.sex);
+        console.log(ldh.age);
+        console.log(typeof ldh);
+        ldh.sing('冰雨');
+
+        var zxy = new Star('张学友',19,'男');
+        console.log(zxy.name);
+        console.log(zxy.age);
+        console.log(zxy.sex);
+        zxy.sing('李香兰');
+
+
+        var obj = {
+            name: 'pink先生',
+            age: 18,
+            sex: '男'
+        }
+        // for in 遍历对象
+        for(var k in obj){
+            console.log(obj[k]);
+        }
+
+        var object = {
+            user: '小月',
+            sex: '女',
+            age: 23,
+            interst:'運動、歌',
+            fn: function(){
+
+            }
+
+        }
+        for(var k in object){
+            console.log(object[k]);
+        }
+
+
+        console.log(Math.PI);//属性
+        console.log(Math.max(1,99,3,123,564,21,23,44,666,65,43));
+        console.log(Math.min(2,-1,90,-40,20,-56,-54));
+        console.log(Math.max(1,22,45,'pink'));
+        console.log(Math.max());
+        console.log(Math.floor(Math.random() * 5 + 1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>

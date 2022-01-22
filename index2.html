@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Math.floor(1.1));//1
+        console.log(Math.floor(1.9));//1
+        console.log(Math.ceil(1.1));// 2
+        console.log(Math.ceil(1.9));//2
+        console.log(Math.round(1.1));//1
+        console.log(Math.round(1.5));//2
+
+        console.log(Math.floor(Math.random()*10));
+
+
+        var arr =['佐藤','太郎', '鈴木','植木','山田','田中'];
+        console.log(arr[Math.floor((Math.random()*5))]);
+
+        var arr = new Array();
+        var obj = new Object();
+        var date = new Date();
+        console.log(date);
+
+        var date1 = new Date(2019,10,01);
+        console.log(date1);
+
+        var date2 = new Date('2019-10-1');
+        console.log(date2);
+
+        //var reg = new RegExp("正则表达式","匹配模式");
+
+        var reg = new RegExp("a");
+        var str = "a";
+        var result = reg.test(str);
+        console.log(result);
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
